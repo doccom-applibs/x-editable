@@ -1,4 +1,4 @@
-/*! X-editable - v1.5.2 
+/*! X-editable - v1.5.1 
 * In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery
 * http://github.com/vitalets/x-editable
 * Copyright (c) 2013 Vitaliy Potapov; Licensed MIT */
@@ -4639,7 +4639,7 @@ $(function(){
     $.extend($.fn.editableContainer.Popup.prototype, {
         containerName: 'poshytip',
         innerCss: 'div.tip-inner',
-        defaults: $.fn.poshytip.defaults,
+        defaults:($.fn.poshytip)?$.fn.poshytip.defaults:null,
         
         initContainer: function(){
             this.handlePlacement();
